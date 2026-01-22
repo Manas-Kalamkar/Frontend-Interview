@@ -21,14 +21,14 @@ const PageLayout = () => {
       <div>{isFetching ? 'Updating...' : ''}</div>
       <div className='flex flex-col py-[2%]'>
 
-        <div className="flex justify-between mx-10 border-b-2 pb-2">
+        <div className="flex justify-between items-center mx-10 border-b-2 pb-2">
           <h1 className='text-6xl font-extrabold'>MK Blog</h1>
           <Button className='cursor-pointer bg-violet-600 w-fit h-fit  text-gray-100 font-bold' onClick={() => { setcreateArticle(true) }}>Create Article</Button>
 
 
         </div>
 
-        <div className="flex  py-[2%]">
+        <div className="flex flex-col md:flex-row md:py-[2%] gap-5">
 
           <BlogList data={data ?? []} setDetailed={setDetailed} />
           <BlogDetail detailed={detailed} />

@@ -29,18 +29,18 @@ const BlogDetail = ({ detailed }: {
   if (error) return 'An error has occurred: ' + error?.message;
 
   return (
-    <Card className='py-0 h-fit w-[72%] flex flex-col items-center mx-10 shadow-2xl '>
-      <img src={blog?.coverImage} alt={"cover image"} className='w-full h-200 object-cover rounded-t-2xl' />
+    <Card className='py-0  md:h-fit  flex flex-col justify-center items-center md:mx-10 shadow-2xl w-screen'>
+      <img src={blog?.coverImage} alt={"cover image"} className='w-fit md:w-full md:h-200 md:object-cover rounded-t-2xl' />
 
-      <div className="data flex flex-col text-left mx-15 my-15 gap-16">
-        <CardAction className="typeAndDate flex gap-4">
+      <div className="data flex flex-col  mx:-2  md:mx-15 my-15 gap-8 lg:gap-16">
+        <CardAction className="typeAndDate flex gap-4 text-center m-auto">
           <div className='uppercase font-bold text-violet-600'>{blog?.category.join(" • ")}</div>•
           <div className='lowercase'>{parseInt((blog?.date!).split("T")[1].split(":")[0]) <= 7 ? 5 : 10} min read</div>
         </CardAction>
 
-        <CardHeader className='flex flex-col gap-6'>
+        <CardHeader className='flex flex-col gap-4'>
           <CardContent className='flex flex-row w-full justify-between'>
-            <CardTitle className="heading text-6xl font-extrabold">
+            <CardTitle className="heading text-2xl md:text-6xl text-left font-extrabold">
               {blog?.title}
             </CardTitle>
             <CardAction>
@@ -62,9 +62,9 @@ const BlogDetail = ({ detailed }: {
             <TableBody>
 
               <TableRow>
-                <TableCell className="subheading font-bold text-xl ">{blog?.category.join(" & ")} </TableCell>
-                <TableCell className="subheading font-bold text-xl ">{parseInt((blog?.date!).split("T")[1].split(":")[0]) <= 7 ? 5 : 10} Mins</TableCell>
-                <TableCell className="subheading font-bold text-xl ">{(blog?.date!).split("T")[0]}</TableCell>
+                <TableCell className="text-[14px] font-bold text-xl ">{blog?.category.join(" & ")} </TableCell>
+                <TableCell className="text-[14px] font-bold text-xl ">{parseInt((blog?.date!).split("T")[1].split(":")[0]) <= 7 ? 5 : 10} Mins</TableCell>
+                <TableCell className="text-[14px] font-bold text-xl ">{(blog?.date!).split("T")[0]}</TableCell>
 
               </TableRow>
             </TableBody>
@@ -72,7 +72,7 @@ const BlogDetail = ({ detailed }: {
 
           </Table>
         </CardHeader>
-        <CardContent className="content text-2xl">
+        <CardContent className="text-left  text-md md:text-2xl">
           {blog?.content}
         </CardContent>
         <div className="tags"></div>
