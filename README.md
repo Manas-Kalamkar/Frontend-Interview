@@ -4,6 +4,14 @@ This repository contains my solution for the **CA Monk Frontend Internship – B
 
 **🚀 Live Demo:** [https://manas-kalamkar.github.io/Blog_Website/](https://manas-kalamkar.github.io/mkblog/)
 
+
+## 📷 Screenshots
+<img width="1920" height="1080" alt="Screenshot from 2026-02-01 00-35-01" src="https://github.com/user-attachments/assets/1e1188db-3f51-4a7d-981b-9531fd3e2f93" />
+<img width="1920" height="1080" alt="Screenshot from 2026-02-01 00-35-15" src="https://github.com/user-attachments/assets/9526a8f0-e0f2-462a-b021-933c452a3153" />
+<img width="410" height="883" alt="Screenshot from 2026-02-01 00-35-48" src="https://github.com/user-attachments/assets/a71f04ef-db32-4c45-94d1-35e005aea35b" />
+<img width="410" height="883" alt="Screenshot from 2026-02-01 00-36-00" src="https://github.com/user-attachments/assets/b8026088-7003-4846-a1b1-822e2a6adc86" />
+
+
 ---
 
 ## 🚀 Tech Stack
